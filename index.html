@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>WeKnow Not Avaliable</title>
+</head>
+
+<body>
+    <main class="flex center">
+        <div class="flex column container">
+            <div class="flex center"><img class="unimed_logo" src="images/unimed_logo.svg" alt="Unimed Logo"></div>
+            <h1>Essa página foi movida!</h1>
+            <div class="flex column center">
+                <a name="new_link" href="http://weknow.unimedsc.coop.br/"
+                    class="redirect_button flex center"><button>Novo WeKnow!</button></a>
+                <label for="new_link">Acesse o WeKnow no botão acima ☝</label>
+            </div>
+        </div>
+        <img src="images/delivery_truck_animation.gif"
+            alt="Animação caminhão de entregas despojando caixas em residências">
+    </main>
+    <section class="flex column center">
+        <h2>FAQ</h2>
+
+        <button class="accordion">1 - Preciso fazer alguma coisa diferente na minha conta para usar a nova
+            versão? 😬</button>
+        <div class="panel">
+            <p>Não se preocupe, em ordem de manter a segurança e não gerar transtornos, as credenciais de acesso
+                se
+                mantém a
+                mesma para todos os usuários. Para o caso de algum inconveniente abra um <a
+                    href="https://atendimento.unimedsc.coop.br/Ticket"
+                    alt="link para o movidesk onde é possível abrir o chamado em questão">chamado</a> para o Núcleo de
+                Dados
+                > Suporte/Orientação, assim que
+                possível o
+                problema será
+                ajustado de volta a normalidade.
+            </p>
+        </div>
+        <button class="accordion">2 - Quais as vantagens de se mudar o servidor usado atualmente?
+            🤔</button>
+        <div class="panel">
+            <ol>
+                <li><strong>Escalabilidade Aprimorada:</strong> A Nuvem oferece recursos escaláveis,
+                    permitindo-nos
+                    ajustar
+                    dinamicamente a capacidade de acordo com a demanda, garantindo desempenho consistente mesmo
+                    em
+                    momentos
+                    de pico.</li>
+                <li><strong>Segurança Reforçada:</strong> A migração para a Nuvem proporciona camadas adicionais
+                    de
+                    segurança, com recursos avançados de proteção de dados e acesso restrito, fortalecendo a
+                    confidencialidade e integridade das informações.</li>
+                <li><strong>Atualizações Contínuas:</strong> A versão atualizada do serviço WeKnow não apenas
+                    corrige
+                    eventuais falhas, mas também introduz novos recursos e melhorias, mantendo-nos na vanguarda
+                    das
+                    tecnologias mais recentes.</li>
+                <li><strong>Eficiência Operacional:</strong> A modernização do serviço WeKnow resulta em
+                    processos
+                    mais
+                    eficientes e tempos de resposta mais rápidos, otimizando as operações internas e,
+                    consequentemente,
+                    proporcionando uma melhor usabilidade do sistema.</li>
+            </ol>
+        </div>
+    </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

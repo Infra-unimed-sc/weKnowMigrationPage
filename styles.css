@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 3rem;
+
+    background-color: #ffff;
+    font-family: 'Inter', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.15rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    gap: 2rem;
+}
+
+label {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+}
+
+section {
+    margin-top: -2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.unimed_logo {
+    width: 50%;
+}
+
+.redirect_button {
+    width: 60%;
+    padding: 16px;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #2b73d8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.redirect_button button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    font-weight: 700;
+    color: #ffff;
+}
+
+.redirect_button:hover {
+    background-color: #1B64C8;
+}
+
+.accordion-wrapper {
+    gap: 0.25rem;
+}
+
+.accordion {
+    background-color: transparent;
+    box-shadow: none;
+
+    transition: 0.4s;
+
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 700;
+
+    padding: 16px;
+    width: 100%;
+
+    border-radius: 0.5rem;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.active,
+.accordion:hover {
+    background-color: #f3f6f9;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: url('./images/accordion_icon.png');
+    color: #777;
+    float: right;
+}
+
+.active:after {
+    content: url('./images/accordion_icon.png');
+    transform: rotate(3.142rad);
+}
